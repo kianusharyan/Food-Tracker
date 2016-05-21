@@ -18,49 +18,66 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="1Ux-W2-eIZ">
-                                <rect key="frame" x="20" y="80" width="560" height="110"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Meal Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qqF-Te-5IJ">
-                                        <rect key="frame" x="0.0" y="0.0" width="87" height="21"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" placeholderIntrinsicWidth="560" placeholderIntrinsicHeight="35" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter meal name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hG3-YR-GpL">
-                                        <rect key="frame" x="0.0" y="33" width="560" height="35"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
-                                    </textField>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4W2-XV-zFv">
-                                        <rect key="frame" x="0.0" y="80" width="151" height="30"/>
-                                        <state key="normal" title="Set Default Label Text"/>
-                                        <connections>
-                                            <action selector="setDefaultLabelText:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7po-Uv-eK8"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="hG3-YR-GpL" secondAttribute="trailing" id="OxX-Zi-aoe"/>
-                                </constraints>
-                            </stackView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" placeholderIntrinsicWidth="560" placeholderIntrinsicHeight="35" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter meal name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hG3-YR-GpL">
+                                <rect key="frame" x="20" y="187" width="560" height="35"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Meal Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qqF-Te-5IJ">
+                                <rect key="frame" x="20" y="158" width="560" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" placeholderIntrinsicWidth="320" placeholderIntrinsicHeight="320" image="defaultPhoto" translatesAutoresizingMaskIntoConstraints="NO" id="rhA-F9-xLN">
+                                <rect key="frame" x="13" y="58" width="560" height="87"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="aj4-JL-0hd" appends="YES" id="eC1-sw-DAB"/>
+                                </connections>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4W2-XV-zFv">
+                                <rect key="frame" x="13" y="230" width="560" height="350"/>
+                                <state key="normal" title="Set Default Label Text"/>
+                                <connections>
+                                    <action selector="setDefaultLabelText:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7po-Uv-eK8"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="1Ux-W2-eIZ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="60" id="89w-70-F5e"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="1Ux-W2-eIZ" secondAttribute="trailing" id="8Bd-ab-YMs"/>
-                            <constraint firstItem="1Ux-W2-eIZ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="VF6-ao-zcz"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="1Ux-W2-eIZ" secondAttribute="bottom" constant="410.5" id="YTV-VX-pUM"/>
+                            <constraint firstItem="4W2-XV-zFv" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="2I4-Nm-oHW"/>
+                            <constraint firstItem="qqF-Te-5IJ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="5NR-BP-GwV"/>
+                            <constraint firstItem="rhA-F9-xLN" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="9wv-by-Kx9"/>
+                            <constraint firstItem="rhA-F9-xLN" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="DMr-t8-tIE"/>
+                            <constraint firstItem="qqF-Te-5IJ" firstAttribute="top" secondItem="rhA-F9-xLN" secondAttribute="bottom" id="N2c-3X-WHz"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="rhA-F9-xLN" secondAttribute="trailing" id="OZG-A4-5Dz"/>
+                            <constraint firstItem="4W2-XV-zFv" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="RS8-Gh-q6L"/>
+                            <constraint firstItem="hG3-YR-GpL" firstAttribute="top" secondItem="qqF-Te-5IJ" secondAttribute="bottom" id="Xm4-ww-PKg"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="4W2-XV-zFv" secondAttribute="bottom" id="mkQ-RQ-ioo"/>
+                            <constraint firstItem="hG3-YR-GpL" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="oWk-ig-5be"/>
+                            <constraint firstItem="qqF-Te-5IJ" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="q9t-wX-0Dk"/>
+                            <constraint firstItem="4W2-XV-zFv" firstAttribute="top" secondItem="hG3-YR-GpL" secondAttribute="bottom" id="qCf-7q-PsH"/>
+                            <constraint firstItem="hG3-YR-GpL" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="vwc-SZ-vvU"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="mealNameLabel" destination="qqF-Te-5IJ" id="Zs6-tK-s6I"/>
                         <outlet property="nameTextField" destination="hG3-YR-GpL" id="PW6-Az-Aco"/>
+                        <outlet property="photoImageView" destination="rhA-F9-xLN" id="UwV-9q-Qb4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="aj4-JL-0hd">
+                    <connections>
+                        <action selector="selectImageFromPhotoLibrary:" destination="BYZ-38-t0r" id="X7Q-xZ-8Mm"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="431" y="288"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="defaultPhoto" width="320" height="320"/>
+    </resources>
 </document>
